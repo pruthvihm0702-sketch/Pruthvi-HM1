@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Student — Timetable</title>
   <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="B8xBJbNCR3ZAx9xdq6X9a";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="F_gco8kHOFkhrEA2Pn7hP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -175,7 +176,7 @@
 
   <!-- Main Content -->
   <main class="container">
-    <h2 id="timetable">I Semester “H” — Physics Group — Tentative Timetable (2025–26)</h2>
+    <h2 id="timetable">I Semester “H” — Physics Group — Timetable (2025–26)</h2>
 
     <div class="table-wrap">
       <table class="timetable">
@@ -184,8 +185,10 @@
             <th>Days</th>
             <th>8:30 - 9:30</th>
             <th>9:30 - 10:30</th>
+            <th>Break</th>
             <th>11:00 - 12:00</th>
             <th>12:00 - 1:00</th>
+            <th>Break</th>
             <th>2:00 - 3:00</th>
             <th>3:00 - 4:00</th>
             <th>4:00 - 5:00</th>
@@ -195,57 +198,62 @@
         <tbody>
           <tr>
             <td>Monday</td>
-            <td class="lab">PPC Lab<br>(8:00-10:00)<br>(CS LAB-5)</td>
+            <td colspan="2" class="lab">PPC Lab<br><b>(8:00-10:00)<br>(CS LAB-5)</b></td>
             <td></td>
             <td>Mathematics-I</td>
             <td>ETC</td>
-            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
           </tr>
           <tr>
             <td>Tuesday</td>
-            <td class="lab">Engg. Physics Lab (H1)<br>(8:00-10:00)</td>
+            <td colspan="2" class="lab">Engg. Physics Lab (H1)<br><b>(8:00-10:00)</b></td>
             <td></td>
             <td>Physics-I</td>
             <td>ETC</td>
-            <td class="lab">Innovation Design Thinking<br>(2:00-4:00)</td>
-            <td></td><td></td><td></td>
+            <td></td>
+            <td colspan="2" class="lab">Innovation Design Thinking<br><b>(Room No.H1 AB-203,<br>H2-AI-303)(2:00-4:00)</b></td>
+            <td></td><td></td>
           </tr>
           <tr>
             <td>Wednesday</td>
-            <td>Principles of Programming using C<br>(AB-203)</td>
-            <td class="highlight">Mentor Mentee Meeting</td>
+            <td>Principles of Programming<br>using C<br><b>(AB-203)</b></td>
+            <td class="highlight"><b>Mentor Mentee Meeting</b></td><td></td>
             <td>Physics-I</td>
             <td>Mathematics-I</td>
-            <td>ETC (AB 208)</td>
+            <td></td>
+            <td>ETC <b>(AB 208)</b></td>
             <td></td><td></td><td></td>
           </tr>
           <tr>
             <td>Thursday</td>
             <td>Mathematics-I</td>
-            <td>Principles of Programming using C</td>
+            <td>Principles of Programming<br>using C</td>
+            <td></td>
             <td>Kannada</td>
             <td>ESC</td>
             <td></td><td></td>
-            <td>Balake Kannada</td>
             <td></td>
+            <td><pre>             </pre></td>
+            <td>Balake Kannada</td>
           </tr>
           <tr>
             <td>Friday</td>
-            <td class="lab">Mathematics Practicals Lab<br>(8:00-10:00)</td>
+            <td colspan="2" class="lab">Mathematics Practicals Lab<br><b>(8:00-10:00)<br>(T & P lab)</b></td>
             <td></td>
-            <td>Physics-I (AB 203)</td>
+            <td>Physics-I<br><b>(AB 203)</b></td>
             <td>ESC</td>
+            <td></td>
             <td>Mathematics-I</td>
-            <td>Principles of Programming using C</td>
+            <td>Principles of Programming<br>using C</td>
             <td></td><td></td>
           </tr>
           <tr>
             <td>Saturday</td>
-            <td>Physics-I (AB 208)</td>
+            <td>Physics-I<br><b>(AB 208)</b></td>
             <td></td>
-            <td class="lab">Engg. Physics Lab(H2)<br>(10:00-12:00)</td>
+            <td colspan="2" class="lab">Engg. Physics Lab(H2)<br><b>(10:00-12:00)</b></td>
             <td>ESC</td>
-            <td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
           </tr>
         </tbody>
       </table>
@@ -272,7 +280,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
